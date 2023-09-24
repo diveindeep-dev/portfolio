@@ -7,7 +7,7 @@ import Image from 'next/image';
 export default function Cta({ title }: { title: string }) {
   const svgPlus = 'https://assets.codepen.io/907368/add.svg';
   const inViewRef = useRef<HTMLDivElement>(null);
-  const isInView = useInView(inViewRef, { margin: '-300px' });
+  const isInView = useInView(inViewRef, { margin: '-500px 0px -300px 0px' });
 
   const durationLarge = 0.4;
   const durationZero = 0.3;
