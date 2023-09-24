@@ -1,0 +1,72 @@
+.cta-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100% - 50px);
+}
+
+.cta {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cta-content {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 50px;
+  height: 56px;
+  width: 56px;
+  border-radius: 36px;
+  background-color: rgba(66, 66, 69, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.fake-back {
+  height: 56px;
+  border-radius: 36px;
+  background-color: rgba(66, 66, 69, 0.6);
+  z-index: 100;
+}
+
+.fake-blue {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  border-radius: 36px;
+  right: 0;
+
+  background-color: var(--back-blue);
+}
+
+.cta-content > .icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  border-radius: 36px;
+  background-color: var(--back-blue);
+  z-index: 99;
+}
+
+.cta-content:hover > .icon {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+}
+
+.cta-container > .icon > img {
+  filter: brightness(0.9);
+}
+
+.cta-content:hover > .icon > img {
+  filter: brightness(1);
+}
