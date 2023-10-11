@@ -1,7 +1,7 @@
 'use client';
 
 import { ReactNode } from 'react';
-import Cta from './cta';
+import Cta from '../cta';
 
 export default function Project({
   children,
@@ -12,7 +12,7 @@ export default function Project({
 }) {
   return (
     <section className="project">
-      <div className="section-content">{children}</div>
+      {children}
       <Cta title={title} />
     </section>
   );
