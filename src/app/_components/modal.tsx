@@ -1,5 +1,6 @@
 'use client';
 
+import { config } from '@/config';
 import { useEffect } from 'react';
 import { MdClose } from 'react-icons/md';
 import { RxExternalLink, RxGithubLogo } from 'react-icons/rx';
@@ -45,13 +46,10 @@ export default function Modal({
           <div className="modal-title">
             <h1>{title}</h1>
             <div className="icons">
-              <a href={`https://${url.cname}diveindeep.dev`} target="_blank">
+              <a href={`https://${url.cname}.${config.domain}`} target="_blank">
                 <RxExternalLink />
               </a>
-              <a
-                href={`https://github.com/diveindeep-dev/${url.git}`}
-                target="_blank"
-              >
+              <a href={`https://${config.github}/${url.git}`} target="_blank">
                 <RxGithubLogo />
               </a>
             </div>

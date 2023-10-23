@@ -1,5 +1,6 @@
 'use client';
 
+import { config } from '@/config';
 import { useEffect, useState } from 'react';
 
 export default function Nav() {
@@ -26,7 +27,7 @@ export default function Nav() {
         <div>Dive in Deep</div>
         <a
           className="blue-link"
-          href="https://diveindeep.space/"
+          href={`https://${config.domain}`}
           target="_blank"
         >
           BLOG
