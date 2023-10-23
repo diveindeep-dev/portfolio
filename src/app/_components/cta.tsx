@@ -4,7 +4,13 @@ import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
 
-export default function Cta({ title }: { title: string }) {
+export default function Cta({
+  title,
+  handleOpen,
+}: {
+  title: string;
+  handleOpen: () => void;
+}) {
   const svgPlus = 'https://assets.codepen.io/907368/add.svg';
   const inViewRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(inViewRef, { margin: '-500px 0px -300px 0px' });
@@ -97,7 +103,11 @@ export default function Cta({ title }: { title: string }) {
         initial="offscreen"
         animate={isInView ? 'onscreen' : 'offscreen'}
       >
-        <motion.div className="cta-content" variants={backVariants}>
+        <motion.div
+          className="cta-content"
+          variants={backVariants}
+          onClick={handleOpen}
+        >
           <motion.div className="fake-back" variants={fakeBackVariants} />
           <motion.div className="fake-blue" variants={fakeBlueVariants} />
           <motion.p variants={textVariants}>{title} 자세히 알아보기</motion.p>
