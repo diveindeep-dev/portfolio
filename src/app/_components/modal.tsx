@@ -46,7 +46,7 @@ export default function Modal({
           <div className="modal-title">
             <h1>{title}</h1>
             <div className="icons">
-              <a href={`https://${url.cname}.${config.domain}`} target="_blank">
+              <a href={`https://${url.cname}${config.domain}`} target="_blank">
                 <RxExternalLink />
               </a>
               <a href={`https://${config.github}/${url.git}`} target="_blank">
