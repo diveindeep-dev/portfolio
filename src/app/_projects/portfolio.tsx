@@ -129,25 +129,25 @@ export default function Portfolio() {
             </div>
           </SlideUp>
           <div className="grid">
-            <div className="block-body sub">
-              <div className="block-body sub">
+            <div className="sub">
+              <div className="block-body">
                 프로젝트를 모아 보여주는 페이지를 만드는 것이 목적이었습니다.
                 아이폰 15프로 페이지의 디자인 및 애니메이션을 적용시킨 페이지로
-                직접 만들어 보기로 했습니다.
+                직접 만들어보았습니다.
               </div>
-              <div className="block-body sub">
+              <div className="block-body">
                 각 프로젝트 섹션별로 <span className="main">CTA 버튼</span>
                 을 만들어 <br /> Modal을 등장시킬 수 있도록 하였습니다.
               </div>
             </div>
             <SlideUp cln="block-body-sub sub">
-              <div className="block-body sub">
+              <div className="block-body">
                 Modal 안에는 좀 더 자세한 특징과 함께,
                 <br />
                 <span className="main">배포 페이지와, 깃허브 레포지토리</span>를
                 연결 시켜 두었습니다.
               </div>
-              <div className="sub">
+              <div className="block-body">
                 현재 페이지는 <span className="main">Next.js</span>를 뼈대로
                 Framer의
                 <span className="main"> framer-motion</span>을 활용하여

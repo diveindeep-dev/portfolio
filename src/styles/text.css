@@ -33,7 +33,7 @@ h2 {
 .block-body {
   font-size: 1.4rem;
   word-break: break-word;
-  padding: 5px 0;
+  padding: 5px;
 }
 
 .block-body-sub {
@@ -87,7 +87,6 @@ h2 {
   height: 300px;
   font-size: 2rem;
   font-weight: 900;
-
 }
 
 .scroll-item {
@@ -114,7 +113,7 @@ h2 {
 
 .scroll-body {
   font-size: 1.5rem;
-  color: var(--text-sub)
+  color: var(--text-sub);
 }
 
 @media only screen and (max-width: 834px) {
@@ -124,6 +123,10 @@ h2 {
 }
 
 @media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 3.5rem;
+  }
+
   .block-title {
     padding: 0 10px;
   }
