@@ -71,7 +71,7 @@
 .tracker-mark {
   position: absolute;
   color: var(--text-blue);
-  font-size: 150%;
+  font-size: 100%;
   z-index: 2;
   display: flex;
   align-items: center;
@@ -84,7 +84,7 @@
 
 .tracker-mark-x {
   position: absolute;
-  font-size: 9rem;
+  font-size: 100%;
   z-index: 2;
   color: var(--text-sub);
   display: flex;

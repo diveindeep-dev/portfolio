@@ -39,12 +39,12 @@ export default function Home() {
                 <div className="scroll-body">지키고 싶은 루틴</div>
               </li>
               <li className="scroll-item" onClick={() => onMoveToElement(ref3)}>
-                <div className="scroll-title">PHOTOBOOTH</div>
-                <div className="scroll-body">자신의 기기로 편하게</div>
-              </li>
-              <li className="scroll-item" onClick={() => onMoveToElement(ref4)}>
                 <div className="scroll-title">CHFA</div>
                 <div className="scroll-body">챈들러가 최애 앨범을</div>
+              </li>
+              <li className="scroll-item" onClick={() => onMoveToElement(ref4)}>
+                <div className="scroll-title">PHOTOBOOTH</div>
+                <div className="scroll-body">자신의 기기로 편하게</div>
               </li>
               <li className="container-title flex-center">
                 <div className="scroll-title">COMING SOON...</div>
@@ -60,10 +60,10 @@ export default function Home() {
         <Tracker />
       </div>
       <div ref={ref3}>
-        <Photobooth />
+        <Chfa />
       </div>
       <div ref={ref4}>
-        <Chfa />
+        <Photobooth />
       </div>
       <section>
         <div className="project-content">

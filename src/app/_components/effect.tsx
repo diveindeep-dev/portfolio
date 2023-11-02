@@ -43,7 +43,7 @@ export function SlideScale({
 
   const { scrollYProgress } = useScroll({
     target: scrollRef,
-    offset: ['1 1', '0.8 0.8'],
+    offset: ['0.5 1', '0.8 0.8'],
   });
 
   const scale = useSpring(scrollYProgress);
